@@ -23,7 +23,7 @@ RUN chmod +x /etc/service/turnserver/run
 
 # Use baseimage-docker's init system.
 EXPOSE 3478 3478/udp
-EXPOSE 49152-65534/udp
+EXPOSE 65500-65534/udp
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
