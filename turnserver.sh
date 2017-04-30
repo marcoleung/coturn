@@ -33,7 +33,7 @@ then
     then
         echo min-port=$MIN_PORT >> /etc/turnserver.conf
     else
-        echo min-port=49152 >> /etc/turnserver.conf
+        echo min-port=65500 >> /etc/turnserver.conf
     fi
     
     if [ -z $MAX_PORT ]
